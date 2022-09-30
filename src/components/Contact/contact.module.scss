@@ -1,0 +1,52 @@
+.webp {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../../materials/images/home/contact.webp);
+}
+
+.noWebp {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url(../../materials/images/home/contact.jpg);
+}
+
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .webp {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(../../materials/images/home/contact@2x.webp);
+    }
+
+    .noWebp {
+        background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+            url(../../materials/images/home/contact@2x.jpg);
+    }
+}
+
+.bg {
+    width: calc(100%);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 247px;
+    margin-bottom: 50px;
+ 
+}
+
+.contact{
+    color: black;
+padding: 50px 0 25px 0;
+background-color: #F4F4F4;
+button{
+    color: white;
+}
+}
+
+.content{
+    padding: 0 20px 0 20px;
+    text-align: center;
+    h2 {
+            font-size: 32px;
+            line-height: 1.375;
+            margin-bottom: 70px;
+        }
+}

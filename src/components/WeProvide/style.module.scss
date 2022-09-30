@@ -1,0 +1,55 @@
+
+.webp  {
+    background: url(../../materials/images/home/people.webp);
+}
+
+.noWebp {
+    background: url(../../materials/images/home/people.jpg);
+}
+@media (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .webp {
+        background:url(../../materials/images/home/people@2x.webp);
+    }
+
+    .noWebp {
+        background:url(../../materials/images/home/people@2x.jpg);
+    }
+}
+.people {
+    height: 220px;
+    width: calc(100% + 40px);
+    transform: translateX(-20px);
+    border-radius: 0px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 80px;
+}
+.provide{
+    padding: 0 20px 80px 20px;
+      background-color: #28A745;
+    .first{
+        margin-bottom: 16px;
+    }
+    h2{
+        font-size: 32px;
+        line-height: 44px;
+        margin-bottom: 24px;
+    }
+    .lorem{
+        margin-bottom: 24px;
+    }
+    button{
+        border: solid 1px;
+        background-color: rgba(255, 0, 0, 0);
+    }
+    transition-duration: 500ms;
+    button:hover{
+        border: solid #28A745;
+        background-color: #F4F4F4;
+        p{
+        color:#28A745;}
+    }
+}

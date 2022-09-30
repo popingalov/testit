@@ -1,0 +1,53 @@
+.header{
+    display: flex;
+     flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 62px;
+transition-duration:  1500ms;
+}
+.opacity{
+     opacity: 0;
+}
+
+.block{
+    display: block;
+    height: 70px;
+    width: 100%;
+    margin-bottom: 62px;
+}
+
+.scroll{
+@extend .header;
+width: 100%;
+padding: 0 22px 0 22px;
+background-color: rgba(0, 0, 0, 0.4);
+opacity: 1;
+position: fixed;
+top: 0;
+z-index: 20;
+}
+
+.icon{
+ margin-right: 8px;
+}
+
+.logo{
+display: flex;
+font-size: 28px;
+line-height: 38px;
+justify-content: flex-start;
+align-items: center;
+margin-bottom: 16px;
+cursor: pointer;
+.finance {
+    color: green;
+    margin-right: 8px;
+}
+transition-duration: 500ms;
+}
+
+.logo:hover{
+    filter: brightness(140%);
+    transform: scale(1.1);
+}
+

@@ -1,0 +1,16 @@
+.button{
+    font-size: 18px;
+    line-height: 1.4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    gap: 10px;
+    flex-direction: row;
+    background: #28A745;
+    border-radius: 5px;
+    width: 175px;
+    height: 57px;
+transition-duration: 500ms;
+}
+

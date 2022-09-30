@@ -1,0 +1,52 @@
+.fotoZone{
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 1fr;
+    justify-items: center;
+    li{
+        picture{
+            display: block;
+            margin-bottom: 16px;
+        }
+    }
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+.position{
+    overflow: hidden;
+    position: relative;
+}
+.pBlock{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.212);
+    font-family: Roboto;
+    color: #ffffff;
+    transform: translateY(101%);
+    transition-property: transform;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+// 
+.soc {
+transition-duration: 550ms;
+}
+    svg:hover{
+   opacity: 0.8;
+    }
+}
+
+.li:hover .pBlock {
+    transform: translateY(0);
+}
+

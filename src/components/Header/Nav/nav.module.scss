@@ -1,0 +1,18 @@
+.list {
+    gap: 12px;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: 'Open Sans';
+
+    a {
+        cursor: pointer;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+.wrap{
+    @extend .list;
+    flex-wrap: nowrap;
+}
