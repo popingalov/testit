@@ -104,10 +104,21 @@
 }
 
 .warning{
-    color: red;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-    position: absolute;
-    top: 45px;
+       color: red;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            position: absolute;
+            top: 45px;
+            z-index: 2;
+}
+.warning2{
+        color: red;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            position: absolute;
+            top: -20px;
+            right: 0;
+            z-index: 2;
 }

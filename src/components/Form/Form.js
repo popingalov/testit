@@ -6,6 +6,7 @@ export default function Form() {
   const [email, setEmail] = useState('');
   const [name, setname] = useState('');
   const [triger, seTriger] = useState('');
+  const [triger2, seTriger2] = useState('');
 
   const handleChange = ({ target: { name, value } }) => {
     switch (name) {
@@ -23,9 +24,17 @@ export default function Form() {
     setEmail('');
     setname('');
     seTriger(false);
+    seTriger2(false);
   };
   function setCustomValidity(e) {
     e.preventDefault();
+    const { name } = e.target;
+    console.log(e.target.name);
+    if (name === 'email') {
+      seTriger2(true);
+
+      return;
+    }
     seTriger(true);
   }
 
@@ -36,13 +45,19 @@ export default function Form() {
           className={s.input}
           type="name"
           name="name"
-          // required
+          required
+          onInvalid={setCustomValidity}
           value={name}
           onChange={handleChange}
         />
         <label className={s.label} htmlFor="name">
           Enter name
         </label>
+        {triger && (
+          <div className={s.warning2}>
+            This is a required field <Warning />
+          </div>
+        )}
       </div>
       <div className={s.formRow}>
         <input
@@ -58,7 +73,7 @@ export default function Form() {
         <label className={s.label} htmlFor="email">
           Enter email email
         </label>
-        {triger && (
+        {triger2 && (
           <div className={s.warning}>
             This is a required field <Warning />
           </div>
